@@ -1,0 +1,268 @@
+<!DOCTYPE html><html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Couple Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(to right, #a1ddf1, #f8bbd0);
+      color: #333;
+    }
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-bottom: 2px solid #fff;
+    }
+    header h1 {
+      font-size: 3rem;
+      color: #d81b60;
+    }
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #00796b;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      text-decoration: none;
+      color: #00796b;
+      font-weight: bold;
+      background-color: #fff;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    nav a:hover {
+      background-color: #d81b60;
+      color: white;
+    }
+    section {
+      padding: 2rem;
+      background-color: rgba(255, 255, 255, 0.7);
+      margin: 1rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #37474f;
+      margin-bottom: 1rem;
+    }
+    .subject-list, .quiz-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .subject-card, .quiz-card {
+      padding: 1rem;
+      border-radius: 20px;
+      color: #fff;
+      transition: transform 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .subject-card:hover, .quiz-card:hover {
+      transform: scale(1.05);
+    }
+    .subject-card a, .quiz-card a {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+    .subject-card:nth-child(1) { background-color: #f48fb1; }
+    .subject-card:nth-child(2) { background-color: #90caf9; }
+    .subject-card:nth-child(3) { background-color: #ce93d8; }
+    .subject-card:nth-child(4) { background-color: #ffcc80; }
+    .subject-card:nth-child(5) { background-color: #a5d6a7; }
+    .subject-card:nth-child(6) { background-color: #ffab91; }
+    .subject-card:nth-child(7) { background-color: #81d4fa; }
+    .subject-card:nth-child(8) { background-color: #ffd54f; }
+    .subject-card:nth-child(9) { background-color: #b39ddb; }
+    .subject-card:nth-child(10) { background-color: #ff8a65; }
+    .subject-card:nth-child(11) { background-color: #aed581; }.quiz-card:nth-child(1) { background-color: #f48fb1; }
+.quiz-card:nth-child(2) { background-color: #90caf9; }
+.quiz-card:nth-child(3) { background-color: #ce93d8; }
+.quiz-card:nth-child(4) { background-color: #ffcc80; }
+.quiz-card:nth-child(5) { background-color: #a5d6a7; }
+.quiz-card:nth-child(6) { background-color: #ffab91; }
+.quiz-card:nth-child(7) { background-color: #81d4fa; }
+.quiz-card:nth-child(8) { background-color: #ffd54f; }
+.quiz-card:nth-child(9) { background-color: #b39ddb; }
+.quiz-card:nth-child(10) { background-color: #ff8a65; }
+.quiz-card:nth-child(11) { background-color: #aed581; }
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 2rem;
+}
+.contact a {
+  color: #00796b;
+  text-decoration: none;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Couple Study</h1>
+    <p>Let’s study, grow, and glow — together! 🌱✨</p>
+  </header>
+
+  <nav>
+    <a href="#beranda">Beranda</a>
+    <a href="#materi">Materi</a>
+    <a href="#latihan">Latihan Soal</a>
+    <a href="#tentang">Tentang Kami</a>
+  </nav>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Couple Study 💑📓</h2>
+    <p>
+      Selamat datang di Couple Study! 🌸📘 Tempat belajar SMA yang seru, interaktif, dan penuh semangat kebersamaan. Di sini kamu bisa akses materi dan latihan soal dari berbagai mata pelajaran, belajar bareng pasangan atau sahabat, dan tumbuh bersama jadi versi terbaikmu! 🌱✨
+      <br><br>
+      Couple Study adalah platform belajar SMA yang menggabungkan semangat belajar, cinta, dan persahabatan. Di sini kamu bisa belajar bersama dan tumbuh bersama!
+    </p>
+  </section>
+
+  <section id="materi">
+    <h2>📓 Materi Kelas 10</h2>
+    <div class="subject-list">
+      <div class="subject-card">
+        <h3>PAI</h3>
+        <a href="https://drive.google.com">Bab 1: Meraih Kesuksesan dengan Kompetisi dalam Kebaikan dan Etos Kerja</a>
+      </div>
+      <div class="subject-card">
+        <h3>Pendidikan Pancasila</h3>
+        <a href="https://drive.google.com">Bab 1: Pancasila sebagai Pemersatu Bangsa</a>
+      </div>
+      <div class="subject-card">
+        <h3>Bahasa Indonesia</h3>
+        <a href="https://drive.google.com">Bab 1: Mengungkap Fakta Alam secara Objektif</a>
+      </div>
+      <div class="subject-card">
+        <h3>Matematika</h3>
+        <a href="https://drive.google.com">Bab 1: Aljabar</a>
+      </div>
+      <div class="subject-card">
+        <h3>IPA</h3>
+        <a href="https://drive.google.com">Bab 1: Zat dan Perubahannya</a>
+      </div>
+      <div class="subject-card">
+        <h3>IPS</h3>
+        <a href="https://drive.google.com">Bab 1: Interaksi Sosial</a>
+      </div>
+      <div class="subject-card">
+        <h3>Bahasa Inggris</h3>
+        <a href="https://drive.google.com">Bab 1: Greetings</a>
+      </div>
+      <div class="subject-card">
+        <h3>PJOK</h3>
+        <a href="https://drive.google.com">Bab 1: Permainan Bola</a>
+      </div>
+      <div class="subject-card">
+        <h3>Informatika</h3>
+        <a href="https://drive.google.com">Bab 1: Dasar Komputasi</a>
+      </div>
+      <div class="subject-card">
+        <h3>Prakarya</h3>
+        <a href="https://drive.google.com">Bab 1: Kerajinan Tangan</a>
+      </div>
+      <div class="subject-card">
+        <h3>Bahasa Sunda</h3>
+        <a href="https://drive.google.com">Bab 1: Carita Pondok</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="latihan">
+    <h2>🖋️ Latihan Soal Kelas 10</h2>
+    <div class="quiz-list">
+      <div class="quiz-card">
+        <h3>PAI</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>Pendidikan Pancasila</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>Bahasa Indonesia</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>Matematika</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>IPA</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>IPS</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>Bahasa Inggris</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>PJOK</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>Informatika</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>Prakarya</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+      <div class="quiz-card">
+        <h3>Bahasa Sunda</h3>
+        <a href="https://forms.gle">Bab 1</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tentang">
+    <h2>💕 Tentang Kami</h2>
+    <p><strong>Couple Study</strong> adalah platform digital yang dirancang untuk mendukung proses belajar para pelajar SMA dengan cara yang lebih hangat dan menyenangkan. Di sini, kamu bisa mengakses berbagai materi pelajaran seperti Pendidikan Agama Islam, Pendidikan Pancasila, Bahasa Indonesia, Matematika, IPA, IPS, Bahasa Inggris, PJOK, Informatika, Prakarya, dan Bahasa Daerah seperti Bahasa Sunda. Semua dikemas dengan pendekatan yang ramah, interaktif, dan penuh semangat kebersamaan.</p>
+    <p>Dengan konsep belajar bersama pasangan belajar, sahabat, atau siapa pun yang kamu percaya, Couple Study membawa nuansa cinta, semangat persahabatan, dan kolaborasi dalam perjalanan akademikmu. Tidak hanya materi pokok, platform ini juga menyediakan latihan soal berbasis Google Form untuk melatih pemahaman secara praktis dan real-time, lengkap per bab untuk tiap mata pelajaran yang ada.</p>
+    <p>Melalui slogan “Let’s Grow & Glow 🌱✨”, Couple Study mengajak setiap pelajar untuk terus berkembang dan bersinar bersama. Kami percaya bahwa belajar bukan hanya tentang angka, tetapi juga tentang proses dan koneksi. Mari jadikan setiap momen belajar lebih bermakna, penuh inspirasi, dan membentuk masa depan yang lebih cerah — bersama pasangan belajarmu.</p>
+    <strong>Let’s Grow & Glow! 🌱✨</strong>
+
+    <h3>📲 Komunitas WhatsApp Channel</h3>
+    <ul>
+      <li><strong>Science Channel:</strong> <a href="https://whatsapp.com/channel/0029Vb6SvQFBA1ewUy3hQD2F">Klik di sini</a></li>
+      <li><strong>Social Channel:</strong> <a href="https://whatsapp.com/channel/0029VbB636UFi8xfZohkDp3B">Klik di sini</a></li>
+      <li><strong>Languages Channel:</strong> <a href="https://whatsapp.com/channel/0029Vb6J9ruF1YlY0mVIEq1H">Klik di sini</a></li>
+    </ul>
+    <p>📧 Email: <a href="mailto:rm.cl12345.mull@gmail.com">rm.cl12345.mull@gmail.com</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Couple Study | Dibuat oleh Robby M & Neneng C | Rilis: 23 Juli 2025
+  </footer>
+</body>
+</html>
